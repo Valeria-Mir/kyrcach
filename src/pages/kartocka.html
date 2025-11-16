@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+@@include('../components/_heder.html')
+<section class="fotodtranicka4">
+    <div class="foto-cartocki">
+        <div class="fotodtranicka4-kolonka">
+            <img src="./assets/images/noznicha.webp">
+            <img src="./assets/images/noznicha.webp">
+            <img src="./assets/images/noznicha.webp">
+        </div>
+        <div class="caryinka_btn">
+            <img src="./assets/images/noznicha.webp" class="fotodtranicka4-big">
+            <div class="btn-img">
+                @@include('../components/button.html', {
+                "text": "В корзину"
+                })
+            </div>
+        </div>
+
+    </div>
+    <div class="inform_kart">
+        <h1 class="fotodtranicka4_zg">Ножницы прямые</h1>
+        <div class="tekctchena">
+            <p class="tekctchena-txt"> Цена </p>
+            <p class="tekctchena-int"> 1800₽</p>
+        </div>
+        <p class="fotodtranicka4_zg-nast-stran">1190₽</p>
+        <div class="displey-otzivi-opicanie">
+            <div class="opicanie-kart">
+                <p class="opicanie-kart-zg">Описание</p>
+                <hr class="line-opicanie-kart">
+            </div>
+            <div class="opicanie-kart">
+                <p class="opicanie-kart-zg" style="color: #B1ACAC">Отзывы</p>
+                <hr class="line-opicanie-kart" style="border-color: #B1ACAC">
+            </div>
+        </div>
+            <p class="camainfo-kart">
+                Острота:Это ключевой параметр. Существует два<br> основных типа режущей кромки:полу-<br>серрейторная(микрозазубрины, которые<br> удерживают скользкие волосы и идеальны для<br> текстурирования и филировки) и полная (абсолютно<br> гладкая, для чистых и точных срезов, например, для<br> тушевки или четких линий)
+            </p>
+        <p class="chitat_dalche">Читать дальше </p>
+
+        </div>
+</section>
+@@include('../components/footer.html')
+
+</body>
+</html>

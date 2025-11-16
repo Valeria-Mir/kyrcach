@@ -1,0 +1,217 @@
+/* === Футер - Базовые стили === */
+
+footer {
+  width: 100%;
+  height: 380px; /* Уменьшил высоту */
+  background: #060606;
+  color: white;
+  border-top: 2px solid #760000;
+  margin-top: 80px; /* Уменьшил отступ сверху */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Выравнивание по центру по вертикали */
+  align-items: center;
+}
+
+.groop_footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px; /* Уменьшил расстояние между колонками */
+  font-size: 22px; /* Немного уменьшил шрифт */
+  color: #fff;
+  margin-top: -20px; /* Поднимаем блок выше */
+}
+
+.groop_footer a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+  line-height: 1.4; /* Уменьшил межстрочное расстояние */
+}
+
+.groop_footer a:hover {
+  color: #760000;
+}
+
+.groop_footer p {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 36px;
+  color: #ccc;
+  margin-bottom: 30px; /* Отступ снизу перед колонками */
+  padding: 0 20px;
+}
+
+/* === АДАПТИВ ДЛЯ ПЛАНШЕТОВ (1024px - 769px) === */
+@media (max-width: 1024px) {
+  footer {
+    height: 350px;
+    margin-top: 60px;
+  }
+
+  .groop_footer {
+    gap: 60px;
+    font-size: 20px;
+  }
+
+  .footer-text {
+    font-size: 17px;
+    margin-bottom: 25px;
+  }
+}
+
+/* === АДАПТИВ ДЛЯ ПЛАНШЕТОВ (768px) === */
+@media (max-width: 768px) {
+  footer {
+    height: auto;
+    min-height: 300px;
+    margin-top: 50px;
+    padding: 30px 0;
+  }
+
+  .groop_footer {
+    gap: 40px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+
+  .groop_footer p {
+    min-width: 160px;
+    margin-bottom: 15px;
+    gap: 4px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+/* === АДАПТИВ ДЛЯ МОБИЛЬНЫХ (480px) === */
+@media (max-width: 480px) {
+  footer {
+    margin-top: 40px;
+    padding: 25px 0;
+    min-height: auto;
+  }
+
+  .groop_footer {
+    gap: 25px;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .groop_footer p {
+    min-width: auto;
+    margin-bottom: 10px;
+    gap: 3px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+
+  .groop_footer a {
+    line-height: 1.3;
+  }
+}
+
+/* === АДАПТИВ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ МОБИЛЬНЫХ (360px) === */
+@media (max-width: 360px) {
+  footer {
+    margin-top: 30px;
+    padding: 20px 0;
+  }
+
+  .groop_footer {
+    gap: 20px;
+    font-size: 15px;
+  }
+
+  .groop_footer p {
+    margin-bottom: 8px;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+}
+
+/* === ДОПОЛНИТЕЛЬНЫЕ УЛУЧШЕНИЯ === */
+
+/* Плавные переходы */
+footer,
+.groop_footer,
+.footer-text,
+.groop_footer a {
+  transition: all 0.3s ease;
+}
+
+/* Улучшение читабельности */
+.footer-text,
+.groop_footer a {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Оптимизация для landscape режима */
+@media (max-width: 768px) and (orientation: landscape) {
+  .groop_footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .groop_footer p {
+    min-width: 140px;
+  }
+}
+
+/* Адаптация для средних экранов */
+@media (max-width: 600px) and (min-width: 481px) {
+  .groop_footer {
+    gap: 30px;
+    font-size: 17px;
+  }
+
+  .groop_footer p {
+    min-width: 150px;
+  }
+}
+
+/* Улучшение доступности */
+.groop_footer a:focus {
+  outline: 2px solid #760000;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Анимация при наведении для десктопа */
+@media (min-width: 769px) {
+  .groop_footer a:hover {
+    transform: translateX(3px);
+  }
+}
+
+/* Альтернативный вариант с удалением br и использованием gap */
+@media (max-width: 480px) {
+  .groop_footer p {
+    gap: 2px;
+  }
+
+  .groop_footer br {
+    display: none;
+  }
+}

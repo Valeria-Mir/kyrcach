@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+@@include('../components/_heder.html')
+<div class="bloc1-o-nas">
+    @@include('../components/vertical_txt.html', {
+    "title": "Р.Н.A",
+    "text": "Наша история<br>Проект основан в 2023 году мастером<br>-практиком Лерой, которая прошла путь от<br> подмастерья до владелицы успешного<br> барбершопа. Столкнувшись с проблемой<br> выбора качественного оборудования, она<br> создала P.Н.A. — кураторский выбор<br> техники, которому можно доверять.<br>Наша миссия<br>Предоставлять профессионалам отрасли<br> тщательно отобранную технику премиум<br>-класса, обеспечивая их надежными<br> инструментами для создания<br> безупречного стиля и развития бизнеса."
+    })
+</div>
+<div class="bloc1-o-nas2">
+    @@include('../components/vertical_txt.html', {
+    "title": "Наши<br>принципы",
+    "text": "Курация, а не ассортимент — только проверенное и одобренное мастерами<br>Профессионализм в деталях — глубокое понимание потребностей индустрии<br>Надежность как стандарт — стабильные поставки и прозрачные гарантии<br>Сообщество экспертов — объединяем лучших для роста индустрии",
+    })
+</div>
+<section>
+    <h3 class="o_nas_komanda">Команда Р.Н.A:</h3>
+    <div class="wrapper">
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/o_nas_claider1.webp",
+        "alt": "Слайд 1"
+        })
+
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/o_nas_claider2.webp",
+        "alt": "Слайд 2"
+        })
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/o_nas_claider3.webp",
+        "alt": "Слайд 2"
+        })
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/o_nas_claider5.webp",
+        "alt": "Слайд 1"
+        })
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/o_nas_claider6.webp",
+        "alt": "Слайд 1"
+        })
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/o_nas_claider7.webp",
+        "alt": "Слайд 1"
+        })
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/o_nas_claider8.webp",
+        "alt": "Слайд 1"
+        })
+    </div>
+</section>
+<p class="textcomanda">
+    Наша команда — это практикующие мастера, технологи и эксперты индустрии с <br>опытом работы от 7 лет. Мы не просто продаем оборудование — мы тестируем<br> его в работе и знаем все нюансы эксплуатации.
+</p>
+@@include('../components/footer.html')
+</body>
+</html>

@@ -1,0 +1,123 @@
+.bloc1-o-nas{
+  background: rgba(118, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 601px;
+}
+
+.bloc1-o-nas{
+  background: rgba(118, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 601px;
+}
+
+.bloc1-contact{
+  background: rgba(118, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 237px;
+}
+
+.bloc1-o-nas2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 601px;
+}
+
+.vertical_text{
+  display: flex;
+  align-items: center;
+  gap: 115px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Заголовки */
+.bloc1-o-nas .vertical_text_title,
+.bloc1-contact .vertical_text_title {
+  font-size: 128px;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.bloc1-o-nas2 .vertical_text_title{
+  font-size: 96px;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  align-items: center;
+}
+
+/* Линии */
+.vertical_text_line{
+  width: 0px;
+  height: 93px;
+  transform: rotate(90deg);
+}
+
+.bloc1-o-nas .vertical_text_line,
+.bloc1-contact .vertical_text_line {
+  border-left: 10px solid white;
+}
+
+.bloc1-o-nas2 .vertical_text_line {
+  border-left: 10px solid #ffffff;
+}
+
+/* Текст */
+.vertical_text_text{
+  font-family: Italiana;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  max-width: 500px;
+}
+
+.bloc1-o-nas .vertical_text_text,
+.bloc1-contact .vertical_text_text {
+  color: #fff;
+}
+
+.bloc1-o-nas2 .vertical_text_text {
+  color: #fff;
+}
+.o_nas_komanda{
+  font-family: Italiana;
+  font-weight: 400;
+  font-size: 75px;
+  leading-trim: NONE;
+  line-height: 100%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 69px;
+  align-items: center;
+
+}
+.textcomanda{
+  font-family: Italiana;
+  font-weight: 400;
+  font-size: 32px;
+  leading-trim: NONE;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-top: 23px;
+}
+@media (max-width: 1024px){
+  .vertical_text_text{
+    font-size: 25px;
+  }
+}

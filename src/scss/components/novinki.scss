@@ -1,0 +1,304 @@
+/* === Hero Section Bloc5 - Новинки - Адаптив === */
+
+.hero-content_bloc5 {
+  padding: 60px 0;
+}
+
+.hero-content_bloc5 .hero-content_bloc4_zg {
+  font-family: Inter;
+  font-size: 67px;
+  color: #760000;
+  text-align: center;
+  padding-top: 51px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.hero-content_bloc5-novinki {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding-top: 48px;
+  flex-wrap: wrap;
+}
+
+/* === Карточки новинок - Базовые стили === */
+
+.card {
+  background: transparent;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.novinki-img {
+  width: 336px;
+  height: 288.69px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .novinki-img {
+  transform: scale(1.02);
+}
+
+.novinki_body {
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.novinki_title {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 39px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.novinki_title:hover {
+  color: #760000;
+}
+
+.novinki_text {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1;
+  color: #760000;
+  padding-top: 7px;
+}
+
+/* === АДАПТИВ ДЛЯ ПЛАНШЕТОВ (1024px - 769px) === */
+@media (max-width: 1024px) {
+  .hero-content_bloc5 {
+    padding: 50px 0;
+  }
+
+  .hero-content_bloc5 .hero-content_bloc4_zg {
+    font-size: 54px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .hero-content_bloc5-novinki {
+    gap: 30px;
+    padding-top: 35px;
+  }
+
+  .novinki-img {
+    width: 300px;
+    height: 260px;
+  }
+
+  .novinki_title {
+    font-size: 34px;
+  }
+
+  .novinki_text {
+    font-size: 32px;
+  }
+}
+
+/* === АДАПТИВ ДЛЯ ПЛАНШЕТОВ (768px) === */
+@media (max-width: 768px) {
+  .hero-content_bloc5 {
+    padding: 40px 0;
+  }
+
+  .hero-content_bloc5 .hero-content_bloc4_zg {
+    font-size: 42px;
+    padding-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .hero-content_bloc5-novinki {
+    gap: 25px;
+    padding-top: 25px;
+  }
+
+  .novinki-img {
+    width: 280px;
+    height: 240px;
+  }
+
+  .novinki_title {
+    font-size: 30px;
+  }
+
+  .novinki_text {
+    font-size: 28px;
+  }
+
+  /* Уменьшаем количество карточек в строке */
+  .hero-content_bloc5-novinki {
+    justify-content: space-around;
+  }
+}
+
+/* === АДАПТИВ ДЛЯ МОБИЛЬНЫХ (480px) === */
+@media (max-width: 480px) {
+  .hero-content_bloc5 {
+    padding: 30px 0;
+  }
+
+  .hero-content_bloc5 .hero-content_bloc4_zg {
+    font-size: 32px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .hero-content_bloc5-novinki {
+    gap: 20px;
+    padding-top: 20px;
+    flex-direction: column;
+  }
+
+  .novinki-img {
+    width: 320px;
+    height: 275px;
+    max-width: 90%;
+  }
+
+  .novinki_title {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  .novinki_text {
+    font-size: 24px;
+    padding-top: 5px;
+  }
+
+  /* Убираем hover-эффекты на мобильных для лучшей производительности */
+  .card:hover {
+    transform: none;
+  }
+
+  .card:hover .novinki-img {
+    transform: none;
+  }
+}
+
+/* === АДАПТИВ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ МОБИЛЬНЫХ (360px) === */
+@media (max-width: 360px) {
+  .hero-content_bloc5 .hero-content_bloc4_zg {
+    font-size: 28px;
+    padding-top: 15px;
+  }
+
+  .hero-content_bloc5-novinki {
+    gap: 15px;
+    padding-top: 15px;
+  }
+
+  .novinki-img {
+    width: 280px;
+    height: 240px;
+  }
+
+  .novinki_title {
+    font-size: 24px;
+  }
+
+  .novinki_text {
+    font-size: 22px;
+  }
+}
+
+/* === ДОПОЛНИТЕЛЬНЫЕ УЛУЧШЕНИЯ === */
+
+/* Плавные переходы для всех элементов */
+.hero-content_bloc5 .hero-content_bloc4_zg,
+.hero-content_bloc5-novinki,
+.card,
+.novinki-img,
+.novinki_title,
+.novinki_text {
+  transition: all 0.3s ease;
+}
+
+/* Улучшение читабельности текста */
+.novinki_title,
+.novinki_text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+/* Оптимизация для landscape режима на мобильных */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-content_bloc5-novinki {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .novinki-img {
+    width: 220px;
+    height: 190px;
+  }
+
+  .novinki_title {
+    font-size: 22px;
+  }
+
+  .novinki_text {
+    font-size: 20px;
+  }
+}
+
+/* Поддержка высоких экранов */
+@media (min-height: 800px) and (max-width: 768px) {
+  .hero-content_bloc5 {
+    padding: 80px 0;
+  }
+}
+
+/* Адаптация для средних экранов (между планшетом и мобильным) */
+@media (max-width: 600px) and (min-width: 481px) {
+  .hero-content_bloc5-novinki {
+    gap: 20px;
+  }
+
+  .novinki-img {
+    width: 250px;
+    height: 215px;
+  }
+
+  .novinki_title {
+    font-size: 28px;
+  }
+
+  .novinki_text {
+    font-size: 26px;
+  }
+}
+
+/* Улучшение отзывчивости изображений */
+.novinki-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Гарантия, что карточки не будут слишком узкими на широких экранах */
+@media (min-width: 1400px) {
+  .hero-content_bloc5-novinki {
+    gap: 50px;
+  }
+
+  .novinki-img {
+    width: 360px;
+    height: 310px;
+  }
+}

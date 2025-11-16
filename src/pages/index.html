@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+</head>
+<body>
+<div class="bloc1">
+    @@include('../components/_heder.html')
+    <main class="hero-section">
+        @@include('../components/herro-baner.html')
+
+<section class="hero-content_bloc2_procrytka" >
+    <div class="wrapper">
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/bloc2_prokrytka1.webp",
+        "alt": "Слайд 1"
+        })
+
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/bloc2_prokrytka2.webp",
+        "alt": "Слайд 2"
+        })
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/bloc2_procrytka3.webp",
+        "alt": "Слайд 2"
+        })
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/bloc2_procrytka4.webp",
+        "alt": "Слайд 1"
+        })
+
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/bloc2_procrytka5.webp",
+        "alt": "Слайд 2"
+        })
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/bloc2_procrytka6.webp",
+        "alt": "Слайд 2"
+        })
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/bloc2_procrytka7.webp",
+        "alt": "Слайд 2"
+        })
+        @@include('../components/procrytka.html', {
+        "img": "./assets/images/bloc2_procrytka8.webp",
+        "alt": "Слайд 2"
+        })
+    </div>
+    <img src="./assets/images/bloc2_foto.webp" class="item2">
+    <div class="text-content">
+        <p>Luxury </p>
+        <p class="text-content-red" >Reliability</p>
+        <p> Artistry</p>
+
+
+    </div>
+
+</section>
+<section class="hero-content_bloc3">
+    <p class="hero-content_bloc2_o_nas">Р.Н.A</p>
+    <hr class="hero-content_bloc2_line">
+    <p class="hero-content_bloc2_o_nas_text">Профессиональная парикмахерская техника <br>и инструменты премиум-класса для барбершопов <br>и салонов, ценящих безупречность. Мы <br> тщательно отбираем оборудование, которое<br> становится надежным партнером мастеров,<br> обеспечивая безупречную точность, скорость и<br> комфорт в работе.</p>
+</section>
+<section class="hero-content_bloc4">
+    <h1 class="hero-content_bloc4_zg">Почему выбирают нас?</h1>
+    <div class="hero-content_bloc4_preimychectva">
+        @@include('../components/_preimychectva.html', {
+        "title": "Экономьте с умом",
+        "text": "Наши цены позволяют<br>приобретать профессиональный инструмент<br>без переплат, а его долгий срок службы<br>экономит ваш бюджет в разы."
+        })
+        @@include('../components/_preimychectva.html', {
+        "title": "Работайте без сбоев",
+        "text": "Надежная техника — это стабильный <br> доход и довольные клиенты. Мы продаем <br>только то, что не подведет в самый<br> ответственный момент"
+        })
+        @@include('../components/_preimychectva.html', {
+        "title": "Растите с нами:",
+        "text": "От первой машинки до оснащения <br> целого салона — у нас есть все <br> необходимое для вашего <br> профессионального роста."
+        })
+    </div>
+
+</section>
+<section class="hero-content_bloc5">
+    <h3 class="hero-content_bloc4_zg">Новинки этого сезона:</h3>
+    <div class="hero-content_bloc5-novinki">
+        @@include('../components/novinki.html', {
+        "img": "./assets/images/kar1",
+        "alt": "Изображение 1",
+        "title": "Набор ножниц",
+        "text": "14 300руб"
+        })
+        @@include('../components/novinki.html', {
+        "img": "./assets/images/kar2",
+        "alt": "Изображение 1",
+        "title": "Щипцы выпрями...",
+        "text": "6 500руб"
+        })
+        @@include('../components/novinki.html', {
+        "img": "./assets/images/kar3",
+        "alt": "Изображение 1",
+        "title": "Фен чёрный ",
+        "text": "17 900руб"
+        })
+    </div>
+    <div class="hero-content_bloc5-novinki">
+        @@include('../components/novinki.html', {
+        "img": "./assets/images/kar4",
+        "alt": "Изображение 1",
+        "title": "Машинка для ....",
+        "text": "11 900руб"
+        })
+        @@include('../components/novinki.html', {
+        "img": "./assets/images/kar5",
+        "alt": "Изображение 1",
+        "title": "Пеньюар с вор....",
+        "text": "2 420руб"
+        })
+        @@include('../components/novinki.html', {
+        "img": "./assets/images/kar6",
+        "alt": "Изображение 1",
+        "title": "Набор брашингов ",
+        "text": "4 000руб"
+        })
+    </div>
+</section>
+<section class="hero-content_bloc6">
+    @@include('../components/akchia.html')
+</section>
+    </main>
+@@include('../components/footer.html')
+
+
+
+
+
+
+</body>
+</html>

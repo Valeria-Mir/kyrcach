@@ -1,0 +1,121 @@
+.fotodtranicka4{
+  display: flex;
+}
+.fotodtranicka4-kolonka {
+  display: flex;
+  flex-direction: column;
+  gap: -8px;
+  width: 144px;
+  margin-left: -55px;
+}
+.fotodtranicka4-big{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -45px;
+  padding-right: -25px;
+  margin-left: -46px;
+}
+.foto-cartocki{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 116px;
+  padding-top: 39px;
+}
+.fotodtranicka4_zg{
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 66px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: white;
+
+}
+.tekctchena{
+  display: flex;
+  gap: 24px;
+  padding-top: 9px;
+}
+.tekctchena-txt{
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #B1ACAC;
+}
+.tekctchena-int{
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: line-through;
+  color: white;
+}
+.fotodtranicka4_zg-nast-stran{
+  font-family: Inter;
+  font-weight: 700;
+  padding-top: 22px;
+  font-size: 66px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #760000;
+}
+.inform_kart{
+  padding-top: 34px;
+  margin-left: -39px;
+}
+.opicanie-kart-zg{
+  font-family: Inter;
+  font-weight: 700;
+  //font-style: Bold;
+  font-size: 40px;
+  leading-trim: NONE;
+  line-height: 100%;
+  //letter-spacing: 0%;
+  color: #760000;
+}
+.displey-otzivi-opicanie{
+  display: flex;
+}
+.line-opicanie-kart{
+  border: 3px solid #760000; /* сначала 3px */
+  width: 308px;
+  height: 0px;
+  opacity: 1; /* потом переопределяется на 6px */
+}
+.camainfo-kart{
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #fff;
+  padding-top: 44px;
+}
+.chitat_dalche{
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #B0ACAC;
+  padding-top: 19px;
+;
+
+}
+.btn-img{
+  margin-left: -113px;
+  margin-top: -98px;
+}

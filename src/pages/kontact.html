@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Title</title>
+</head>
+<body>
+@@include('../components/_heder.html')
+<div class="bloc1-contact">
+    @@include('../components/vertical_txt.html', {
+    "title": "Р.Н.A",
+    "text": "Свяжитесь с нами любым удобным способом — мы<br> всегда на связи"
+    })
+</div>
+<div class="bloc2-contact phone">
+    @@include('../components/contacti.html', {
+    "title": "Телефон:",
+    "telefon": "+7 (495) 123-45-67"
+    })
+</div>
+<div class="bloc2-contact whatsapp">
+    @@include('../components/contacti.html', {
+    "title": "WhatsApp/<br>Telegram:",
+    "telefon": "+7 (999) 123-45-67"
+    })
+</div>
+<div class="bloc2-contact email">
+    @@include('../components/contacti.html', {
+    "title": "Email:",
+    "telefon": "info@lera-pro.ru"
+    })
+</div>
+<section class="bloc3-contact">
+    <div class="bloc3-kontact-bydni">
+        <p class="dni_nedeli_bydni">Пн-Пт: </p>
+        <div class="vrema_bydni">
+            <p class="telefon">9:00-21:00</p>
+        </div>
+    </div>
+    <div class="bloc3-kontact-bydni">
+        <p class="dni_nedeli_bydni"> Сб-Вс: </p>
+        <div class="vrema_bydni">
+            <p class="telefon">10:00-18:00</p>
+        </div>
+    </div>
+</section>
+<section class="bloc3-kontact-karta">
+    <div class="bloc3-kontact-karta-info">
+        <p class="bloc3-kontact-karta-zg">Мы в соцсетях:</p>
+        <div class="bloc3-kontact-karta-cocheti">
+            <p class="bloc3-kontact-karta-cocheti-text">
+                Instagram:@lera_pro_fessional<br>
+                VK:vk.com/lerapro<br>
+                YouTube:L.R.A. Professional</p>
+        </div>
+    </div>
+    <img src="./assets/images/karta.webp" class="karta-img">
+
+</section>
+@@include('../components/footer.html')
+
+</body>
+</html>
