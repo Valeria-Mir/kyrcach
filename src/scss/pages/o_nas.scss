@@ -1,11 +1,124 @@
-.bloc1-o-nas{
-  background: rgba(118, 0, 0, 0.6);
+.contact-stranicka3 {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 601px;
+  padding-top: 66px;
+  gap: 20px;
+  padding-left: 188px;
 }
 
+.zg_contact {
+  font-family: Italiana;
+  font-weight: 400;
+  font-size: 49px;
+  color: white;
+  min-width: 300px; /* Фиксированная ширина для всех заголовков */
+  flex-shrink: 0; /* Запрещаем сжатие */
+  text-align: left;
+}
+
+.telefon {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.bloc_kontact {
+  background: rgba(118, 0, 0, .6);
+  width: 633px;
+  height: 78px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; /* Запрещаем сжатие красного блока */
+}
+.dni_nedeli_bydni{
+  font-family: Italiana;
+  font-weight: 400;
+  font-size: 49px;
+  leading-trim: NONE;
+  line-height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 183px;
+  padding-top: 60px;
+}
+.vrema_bydni{
+  width: 404px;
+  height: 89px;
+  top: 1349px;
+  left: 246px;
+  angle: 0 deg;
+  opacity: 1;
+  border-radius: 24px;
+  background: rgba(118, 0, 0, .6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 175px;
+  margin-top: 30px;
+}
+.bloc3-contact{
+  display: flex;
+}
+.bloc3-kontact-karta{
+  display: flex;
+
+}
+.bloc3-kontact-karta-zg{
+  font-family: Italiana;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 48px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 175px;
+  padding-top: 185px;
+}
+.bloc3-kontact-karta-cocheti{
+  width: 410px;
+  height: 200px;
+  top: 1866px;
+  left: 123px;
+  angle: 0 deg;
+  opacity: 1;
+  border-radius: 24px;
+  background: rgba(118, 0, 0, .6);
+  margin-left: 167px;
+  margin-top: 39px;
+}
+.bloc3-kontact-karta-cocheti-text{
+  font-family: Italiana;
+  font-weight: 400;
+  font-size: 26px;
+  leading-trim: NONE;
+  line-height: 100%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-offset: 0;
+  text-decoration-thickness: 0;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 64px;
+}
+.karta-img{
+  width: 548px;
+  margin-top: 136px;
+  margin-left: 31px;
+  border-radius: 24px
+}
 .bloc1-o-nas{
   background: rgba(118, 0, 0, 0.6);
   display: flex;
@@ -33,7 +146,7 @@
   display: flex;
   align-items: center;
   gap: 115px;
-  max-width: 1200px;
+  max-width: 1339px;
   margin: 0 auto;
 }
 
@@ -75,11 +188,10 @@
 
 /* Текст */
 .vertical_text_text{
-  font-family: Italiana;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 100%;
+  width: 100%;
   max-width: 500px;
+  margin: 0 auto;
+  font-size: 21px
 }
 
 .bloc1-o-nas .vertical_text_text,

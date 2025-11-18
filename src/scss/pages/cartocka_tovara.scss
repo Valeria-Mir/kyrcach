@@ -75,21 +75,19 @@
 .opicanie-kart-zg{
   font-family: Inter;
   font-weight: 700;
-  //font-style: Bold;
   font-size: 40px;
   leading-trim: NONE;
   line-height: 100%;
-  //letter-spacing: 0%;
   color: #760000;
 }
 .displey-otzivi-opicanie{
   display: flex;
 }
 .line-opicanie-kart{
-  border: 3px solid #760000; /* сначала 3px */
+  border: 3px solid #760000;
   width: 308px;
   height: 0px;
-  opacity: 1; /* потом переопределяется на 6px */
+  opacity: 1;
 }
 .camainfo-kart{
   font-family: Inter;
@@ -112,10 +110,84 @@
   letter-spacing: 0%;
   color: #B0ACAC;
   padding-top: 19px;
-;
-
 }
 .btn-img{
   margin-left: -113px;
   margin-top: -98px;
+}
+
+/* === АДАПТИВ ДЛЯ МОБИЛЬНЫХ (480px) === */
+@media (max-width: 480px){
+  .fotodtranicka4{
+    flex-direction: column !important;
+  }
+
+  .foto-cartocki{
+    padding-left: 20px !important;
+    padding-top: 20px !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .inform_kart{
+    padding-top: 40px !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .fotodtranicka4-kolonka {
+    margin-left: 0 !important;
+    gap: 10px !important;
+    flex-direction: row !important;
+    width: auto !important;
+    margin-bottom: 20px !important;
+  }
+
+  .fotodtranicka4-big{
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .btn-img{
+    margin-left: 0 !important;
+    margin-top: 20px !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .displey-otzivi-opicanie{
+    justify-content: center !important;
+  }
+
+  .fotodtranicka4_zg{
+    font-size: 48px !important;
+  }
+
+  .tekctchena-txt,
+  .tekctchena-int{
+    font-size: 32px !important;
+  }
+
+  .fotodtranicka4_zg-nast-stran{
+    font-size: 48px !important;
+  }
+
+  .opicanie-kart-zg{
+    font-size: 32px !important;
+  }
+
+  .line-opicanie-kart{
+    width: 200px !important;
+  }
+
+  .camainfo-kart{
+    font-size: 22px !important;
+    padding-top: 30px !important;
+  }
+
+  .chitat_dalche{
+    font-size: 22px !important;
+    padding-top: 15px !important;
+  }
 }

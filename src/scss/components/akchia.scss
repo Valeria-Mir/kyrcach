@@ -1,5 +1,3 @@
-/* === Акция - Базовые стили === */
-
 .achia {
   width: 1084px;
   height: 257px;
@@ -59,11 +57,60 @@
   transform: translateY(-50%) scale(1.05);
 }
 
-/* === АДАПТИВ ДЛЯ ПЛАНШЕТОВ (1024px - 769px) === */
+/* === АДАПТИВ ДЛЯ БОЛЬШИХ ЭКРАНОВ (1400px) === */
+@media (min-width: 1400px) {
+  .achia {
+    width: 1200px;
+    height: 280px;
+    padding: 45px 90px;
+  }
+
+  .achia_zg {
+    font-size: 56px;
+  }
+
+  .achia_p_zg {
+    font-size: 28px;
+  }
+
+  .achia_btn {
+    width: 400px;
+    height: 100px;
+    font-size: 30px;
+    right: 90px;
+  }
+}
+
+/* === АДАПТИВ ДЛЯ СРЕДНИХ ЭКРАНОВ (1200px) === */
+@media (max-width: 1200px) {
+  .achia {
+    width: 1000px;
+    height: 240px;
+    padding: 35px 70px;
+  }
+
+  .achia_zg {
+    font-size: 48px;
+  }
+
+  .achia_p_zg {
+    font-size: 24px;
+  }
+
+  .achia_btn {
+    width: 340px;
+    height: 85px;
+    font-size: 26px;
+    right: 70px;
+  }
+}
+
+/* === АДАПТИВ ДЛЯ ПЛАНШЕТОВ (1024px) === */
 @media (max-width: 1024px) {
   .achia {
     width: 90%;
     height: auto;
+    min-height: 220px;
     padding: 30px 60px;
     margin: 0 auto;
   }
@@ -88,12 +135,37 @@
   }
 }
 
+/* === АДАПТИВ ДЛЯ ПЛАНШЕТОВ (900px) === */
+@media (max-width: 900px) {
+  .achia {
+    width: 95%;
+    padding: 28px 50px;
+    min-height: 200px;
+  }
+
+  .achia_zg {
+    font-size: 38px;
+  }
+
+  .achia_p_zg {
+    font-size: 21px;
+  }
+
+  .achia_btn {
+    width: 280px;
+    height: 75px;
+    font-size: 22px;
+    right: 50px;
+  }
+}
+
 /* === АДАПТИВ ДЛЯ ПЛАНШЕТОВ (768px) === */
 @media (max-width: 768px) {
   .achia {
     width: 95%;
     padding: 25px 40px;
     border-radius: 20px;
+    min-height: 180px;
   }
 
   .achia_zg {
@@ -115,6 +187,30 @@
 
   .hero-content_bloc6 {
     padding-top: 50px;
+  }
+}
+
+/* === АДАПТИВ ДЛЯ СРЕДНИХ МОБИЛЬНЫХ (600px) === */
+@media (max-width: 600px) {
+  .achia {
+    width: 85%;
+    padding: 30px 35px;
+    min-height: 170px;
+  }
+
+  .achia_zg {
+    font-size: 32px;
+  }
+
+  .achia_p_zg {
+    font-size: 19px;
+  }
+
+  .achia_btn {
+    width: 260px;
+    height: 65px;
+    font-size: 19px;
+    right: 35px;
   }
 }
 
@@ -157,140 +253,5 @@
   .achia_btn:hover {
     transform: none;
     background: #fff;
-  }
-}
-
-/* === АДАПТИВ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ МОБИЛЬНЫХ (360px) === */
-@media (max-width: 360px) {
-  .achia {
-    width: 95%;
-    padding: 25px 20px;
-    min-height: 280px;
-  }
-
-  .achia_zg {
-    font-size: 24px;
-    margin-bottom: 12px;
-  }
-
-  .achia_p_zg {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-
-  .achia_btn {
-    width: 240px;
-    height: 55px;
-    font-size: 16px;
-    margin-top: 15px;
-  }
-
-  .hero-content_bloc6 {
-    padding-top: 30px;
-  }
-}
-
-/* === ДОПОЛНИТЕЛЬНЫЕ УЛУЧШЕНИЯ === */
-
-/* Плавные переходы для всех элементов */
-.achia,
-.achia_zg,
-.achia_p_zg,
-.achia_btn {
-  transition: all 0.3s ease;
-}
-
-/* Улучшение читабельности текста */
-.achia_zg,
-.achia_p_zg {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-/* Оптимизация для landscape режима на мобильных */
-@media (max-width: 768px) and (orientation: landscape) {
-  .achia {
-    min-height: 250px;
-    padding: 20px 30px;
-  }
-
-  .achia_zg {
-    font-size: 24px;
-  }
-
-  .achia_p_zg {
-    font-size: 16px;
-  }
-
-  .achia_btn {
-    width: 220px;
-    height: 50px;
-    font-size: 16px;
-  }
-}
-
-/* Поддержка высоких экранов */
-@media (min-height: 800px) and (max-width: 768px) {
-  .hero-content_bloc6 {
-    padding-top: 80px;
-  }
-}
-
-/* Адаптация для средних экранов (между планшетом и мобильным) */
-@media (max-width: 600px) and (min-width: 481px) {
-  .achia {
-    width: 85%;
-    padding: 30px 35px;
-  }
-
-  .achia_zg {
-    font-size: 32px;
-  }
-
-  .achia_p_zg {
-    font-size: 19px;
-  }
-
-  .achia_btn {
-    width: 260px;
-    height: 65px;
-    font-size: 19px;
-  }
-}
-
-/* Гарантия, что блок не будет слишком широким на больших экранах */
-@media (min-width: 1400px) {
-  .achia {
-    width: 1200px;
-    height: 280px;
-    padding: 45px 90px;
-  }
-
-  .achia_zg {
-    font-size: 56px;
-  }
-
-  .achia_p_zg {
-    font-size: 28px;
-  }
-
-  .achia_btn {
-    width: 400px;
-    height: 100px;
-    font-size: 30px;
-    right: 90px;
-  }
-}
-
-/* Улучшение доступности для кнопки */
-.achia_btn:focus {
-  outline: 3px solid rgba(255, 255, 255, 0.5);
-  outline-offset: 2px;
-}
-
-/* Анимация при наведении для десктопа */
-@media (min-width: 769px) {
-  .achia_btn:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
 }

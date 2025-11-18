@@ -19,10 +19,11 @@
 .hero-content_bloc2_o_nas_text {
   font-family: Inter;
   font-size: 38px;
-  line-height: 1.4;
+  line-height: 100%;
   color: #fff;
-  text-align: center;
-  padding-top: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero-content_bloc4 {
   padding: 60px 0;
@@ -43,7 +44,7 @@
   gap: 49px;
   justify-content: center;
   align-items: stretch;
-  padding-top: 48px;
+  padding-top: 6px;
   flex-wrap: wrap;
 }
 .preimychectva {
@@ -68,6 +69,7 @@
 .preimychectva_text {
   color: #FFFFFF;
   text-align: center;
+  margin-top: -43px;
 }
 
 .preimychectva_text_zg {
