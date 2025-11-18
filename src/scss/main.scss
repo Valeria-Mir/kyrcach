@@ -23,6 +23,7 @@
 //@use "components/table";
 //@use "components/stranicka5";
 //@use "components/stranicka6";
+<<<<<<< HEAD
 @use "components/preimychectva";
 @use "components/novinki";
 @use "components/akchia";
@@ -35,14 +36,21 @@
 @use "pages/cartocka_tovara";
 @use "components/herro-baner";
 @use "pages/adaptiv_bloc_onas_preemychectva";
+=======
+//
+
+>>>>>>> 4456a0289cfb6d0b4d11d861693eded5d0b75c1a
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
 
 }
 a {
   text-decoration: none;
+=======
+>>>>>>> 4456a0289cfb6d0b4d11d861693eded5d0b75c1a
 }
 body{
   background: #060606;
@@ -60,7 +68,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+<<<<<<< HEAD
   padding: 32px 90px;
+=======
+  padding: 65px 90px;
+>>>>>>> 4456a0289cfb6d0b4d11d861693eded5d0b75c1a
 }
 
 
@@ -100,6 +112,7 @@ header {
 nav {
   display: flex;
   gap: 29px;
+<<<<<<< HEAD
   font-size: 29px;
   text-decoration: none;
   margin-top: 20px;
@@ -120,6 +133,63 @@ nav a {
   display: flex;
   align-items: center; /* Выравнивание по центру */
   margin-top: -16px;
+=======
+  font-size: 36px;
+  text-decoration: none;
+  //margin-right: 4px;
+  margin-top: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-ocnova_bloc1{
+  color: white;
+  margin-left: 200px;
+  margin-top: 9px;
+}
+
+.hero-ocnova-text{
+  display: flex;
+}
+
+.lra-bloc2{
+  font-size: 64px;
+}
+
+.podzagolovok-bloc2{
+  font-size: 64px;
+  margin-left: 45px;
+}
+
+.podzagolovok-bloc23{
+  font-size: 36px;
+  padding-top: 24px;
+}
+
+.btn-bloc1-ocnova{
+  width: 568px;
+  height: 115px;
+  background-color: rgba(118, 0, 0, 0.7);
+  color: white;
+  font-size: 44px;
+  border: none;
+  border-radius: 37px;
+  margin-top: 57px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-bloc1-ocnova:hover {
+  background-color: rgba(118, 0, 0, 0.9);
+}
+.korzina_user{
+  display: flex;
+  gap: 20px; /* Добавьте отступ между иконками */
+  align-items: center; /* Выравнивание по центру */
+>>>>>>> 4456a0289cfb6d0b4d11d861693eded5d0b75c1a
 }
 
 .korzina{
@@ -127,9 +197,13 @@ nav a {
   height: auto;
   margin-top: -11px;
 }
+<<<<<<< HEAD
 .luna{
   width: 93px;
 }
+=======
+
+>>>>>>> 4456a0289cfb6d0b4d11d861693eded5d0b75c1a
 .user{
   width: 57px;
   height: auto;
@@ -137,7 +211,10 @@ nav a {
 .tovari{
   color: #760000;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4456a0289cfb6d0b4d11d861693eded5d0b75c1a
 .tovari{
   text-align: center;
   font-size: 75px;
@@ -256,6 +333,7 @@ footer{
 .text-content-red{
   color: #760000;
 }
+<<<<<<< HEAD
 .hero-content_bloc2_o_nas{
   color: #760000;
   font-size: 128px;
@@ -296,3 +374,5 @@ footer{
   padding-top: 48px;
 }
 
+=======
+>>>>>>> 4456a0289cfb6d0b4d11d861693eded5d0b75c1a
