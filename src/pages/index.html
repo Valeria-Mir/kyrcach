@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,56 +5,51 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/main.css" />
-    <title>Document</title>
+    <title>RHA Professional</title>
 </head>
-<body>
+<body class="dark-theme">
 <div class="bloc1">
     @@include('../components/_heder.html')
     <main class="hero-section">
         @@include('../components/herro-baner.html')
 
 <section class="hero-content_bloc2_procrytka" >
-    <div class="wrapper">
+    <div class="wrapper" id="scrollContainer">
         @@include('../components/procrytka.html', {
-        "img": "./assets/images/bloc2_prokrytka1.webp",
+        "img": "./assets/images/o_nas_claider1.webp",
         "alt": "Слайд 1"
         })
 
         @@include('../components/procrytka.html', {
-        "img": "./assets/images/bloc2_prokrytka2.webp",
+        "img": "./assets/images/o_nas_claider2.webp",
         "alt": "Слайд 2"
         })
         @@include('../components/procrytka.html', {
-        "img": "./assets/images/bloc2_procrytka3.webp",
+        "img": "./assets/images/o_nas_claider3.webp",
         "alt": "Слайд 2"
         })
         @@include('../components/procrytka.html', {
-        "img": "./assets/images/bloc2_procrytka4.webp",
+        "img": "./assets/images/o_nas_claider4.webp",
         "alt": "Слайд 1"
         })
-
         @@include('../components/procrytka.html', {
-        "img": "./assets/images/bloc2_procrytka5.webp",
-        "alt": "Слайд 2"
+        "img": "./assets/images/o_nas_claider6.webp",
+        "alt": "Слайд 1"
         })
         @@include('../components/procrytka.html', {
-        "img": "./assets/images/bloc2_procrytka6.webp",
-        "alt": "Слайд 2"
+        "img": "./assets/images/o_nas_claider7.webp",
+        "alt": "Слайд 1"
         })
         @@include('../components/procrytka.html', {
-        "img": "./assets/images/bloc2_procrytka7.webp",
-        "alt": "Слайд 2"
-        })
-        @@include('../components/procrytka.html', {
-        "img": "./assets/images/bloc2_procrytka8.webp",
-        "alt": "Слайд 2"
+        "img": "./assets/images/o_nas_claider8.webp",
+        "alt": "Слайд 1"
         })
     </div>
     <img src="./assets/images/bloc2_foto.webp" class="item2">
     <div class="text-content">
-        <p>Luxury </p>
-        <p class="text-content-red" >Reliability</p>
-        <p> Artistry</p>
+        <p>Роскошь </p>
+        <p class="text-content-red" >Надёжность</p>
+        <p> Артистизм </p>
 
 
     </div>
@@ -132,7 +126,8 @@
 </section>
     </main>
 @@include('../components/footer.html')
-
+<script src="assets/js/prokrytka.js"></script>
+<script src="assets/js/ts.js"></script>
 
 
 

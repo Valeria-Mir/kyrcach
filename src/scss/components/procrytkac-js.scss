@@ -1,0 +1,53 @@
+.hero-content_bloc2_procrytka {
+  position: relative;
+}
+
+.item {
+  min-width: 431px;
+  height: 441px;
+  margin-right: 10px;
+}
+
+.wrapper {
+  margin-top: 33px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 0px;
+}
+
+.item2 {
+  width: 100%;
+  height: 446px;
+  object-fit: cover;
+}
+
+.content-wrapper {
+  position: relative;
+}
+
+.text-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  pointer-events: none;
+}
+
+.text-content p {
+  font-size: 100px;
+  margin: 10px 0;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.text-content-red {
+  color: #760000;
+}

@@ -1,0 +1,221 @@
+/* === СВЕТЛАЯ ТЕМА === */
+body.light-theme {
+  background: #f8f8f8;
+  color: #333;
+}
+/* Для светлой темы - все три линии бургер-меню */
+body.light-theme .burger-nav label::before,
+body.light-theme .burger-nav label::after,
+body.light-theme .burger-nav label span {
+  background-color: #760000 !important;
+}
+
+/* Анимации при открытии для светлой темы */
+body.light-theme #burger-toggle:checked ~ label::after {
+  transform: rotate(45deg);
+  top: 11px;
+  background-color: #760000 !important;
+}
+
+body.light-theme #burger-toggle:checked ~ label::before {
+  transform: rotate(-45deg);
+  top: 11px;
+  background-color: #760000 !important;
+}
+
+body.light-theme #burger-toggle:checked ~ label span {
+  opacity: 0;
+}
+
+/* Ховер эффекты для светлой темы */
+body.light-theme .burger-nav label:hover::before,
+body.light-theme .burger-nav label:hover::after,
+body.light-theme .burger-nav label:hover span {
+  background-color: #a30000 !important;
+}
+body.light-theme .bloc1 {
+  background-image: url("../images/svetlai-bloc1.webp");
+}
+body.light-theme .zg_contact {
+  color: rgba(118, 0, 0, .6) !important;
+}
+body.light-theme .fotodtranicka4_zg {
+  color: #760000 !important;
+}
+body.light-theme .tekctchena-txt{
+  color: #000000;
+}
+body.light-theme .tekctchena-int{
+  color: #B1ACAC;
+}
+body.light-theme .camainfo-kart {
+  color: #000000;
+}
+//body.light-theme .bloc1 {
+//  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+//}
+
+/* ФИКС для вертикальных линий в светлой теме */
+
+body.light-theme header {
+  color: #760000;
+}
+
+body.light-theme nav a {
+  color: #000;
+}
+
+body.light-theme nav a:hover {
+  color: #760000;
+}
+
+body.light-theme .hero-ocnova_bloc1 {
+  color: #333;
+}
+
+body.light-theme .text-content {
+  color: #333;
+}
+
+body.light-theme .text-content p {
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+}
+
+/* ФИКС для текста на странице "О нас" */
+body.light-theme .bloc1-o-nas2 .vertical_text_title {
+  color: #000000 !important;
+}
+
+body.light-theme .bloc1-o-nas2 .vertical_text_text {
+  color: #760000 !important;
+
+}
+
+body.light-theme .o_nas_komanda {
+  color: #000000 !important;
+}
+
+body.light-theme .textcomanda {
+  color: #000000 !important;
+}
+
+body.light-theme .hero-content_bloc2_line {
+  border-color: #333;
+}
+
+// ФИКС для текста "О нас" на главной
+body.light-theme .hero-content_bloc2_o_nas_text {
+  color: #000000 !important;
+}
+
+body.light-theme .novinki_title {
+  color: #333 !important;
+}
+
+body.light-theme footer {
+  background: #e8e8e8;
+  color: #333;
+  border-top: 2px solid #760000;
+}
+
+body.light-theme .groop_footer {
+  color: #333;
+}
+
+body.light-theme .groop_footer a {
+  color: #333 !important;
+}
+
+body.light-theme .footer-text {
+  color: #666;
+}
+
+// Иконка луны в светлой теме
+body.light-theme .luna {
+  filter: invert(1);
+}
+body.light-theme .vertical_text_line,
+.bloc1-o-nas .vertical_text_line,
+.bloc1-o-nas2 .vertical_text_line {
+  border-color: #760000;
+  background: #B0ACAC;
+  border-width: 2px;
+}
+body.light-theme .dni_nedeli_bydni {
+  color: rgba(118, 0, 0, .6) !important;
+}
+body.dark-theme {
+  background: #060606;
+  color: white;
+}
+
+body.dark-theme .bloc1 {
+  background-image: url("../images/bloc1_ocnova.webp");
+}
+
+body.dark-theme header {
+  color: white;
+}
+
+body.dark-theme nav a {
+  color: white;
+}
+
+body.dark-theme .hero-ocnova_bloc1 {
+  color: white;
+}
+
+body.dark-theme .text-content {
+  color: white;
+}
+
+body.dark-theme .hero-content_bloc2_line {
+  border-color: #fff;
+}
+
+/* ФИКС для текста на странице "О нас" в темной теме */
+body.dark-theme .bloc1-o-nas2 .vertical_text_title {
+  color: #fff !important;
+}
+
+body.dark-theme .bloc1-o-nas2 .vertical_text_text {
+  color: #fff !important;
+}
+
+body.dark-theme .o_nas_komanda {
+  color: #fff !important;
+}
+
+body.dark-theme .textcomanda {
+  color: #fff !important;
+}
+
+body.dark-theme .hero-content_bloc2_o_nas_text {
+  color: #fff !important;
+}
+
+body.dark-theme .novinki_title {
+  color: #fff !important;
+}
+
+body.dark-theme footer {
+  background: #060606;
+  color: white;
+}
+
+body.dark-theme .groop_footer {
+  color: #fff;
+}
+
+body.dark-theme .groop_footer a {
+  color: #fff !important;
+}
+
+body.dark-theme .footer-text {
+  color: #ccc;
+}
+
+/* ФИКС для вертикальных линий в темной теме */
+body.dark-theme .bloc1-o-nas2 .vertical_text_line {
+  border-left: 10px solid #ffffff !important;
+}

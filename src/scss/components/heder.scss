@@ -1,34 +1,27 @@
-/* Базовые стили для десктопа */
-.desktop-nav {
-  display: flex;
-  gap: 20px;
-}
-
 .burger-nav {
   display: none;
 }
-
+.desktop-nav {
+  display: flex;
+}
 .korzina_user {
   display: flex;
-  gap: 15px;
 }
 
-/* Бургер меню для экранов ≤1104px */
 @media (max-width: 1104px) {
   .desktop-nav {
     display: none !important;
   }
 
-  .korzina_user {
+  header > .korzina_user {
     display: none !important;
   }
 
   .burger-nav {
-    display: block;
+    display: block !important;
     position: relative;
   }
 
-  /* Стили для бургер-иконки */
   label {
     position: relative;
     display: block;
@@ -36,6 +29,8 @@
     width: 30px;
     cursor: pointer;
     z-index: 2;
+    margin-left: 40px;
+    margin-top: -57px;
   }
 
   label::after,
@@ -62,12 +57,11 @@
     top: 11px;
   }
 
-  /* Стили для выпадающего меню */
   .burger-menu {
     display: none;
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 0;
     width: 200px;
     background: rgba(0, 0, 0, 0.95);
     border-radius: 8px;
@@ -93,12 +87,6 @@
     text-align: center;
   }
 
-  .burger-menu a:hover {
-    background-color: rgba(118, 0, 0, 0.7);
-    transform: translateX(5px);
-  }
-
-  /* Логика открытия/закрытия */
   #burger-toggle {
     display: none;
   }
@@ -121,54 +109,166 @@
     opacity: 0;
   }
 
-  /* Адаптируем header */
   header {
     padding: 15px 20px;
     justify-content: space-between;
     align-items: center;
     display: flex;
+    position: relative;
+    min-height: 60px;
+  }
+
+  /* Логотип в ПРАВЫЙ верхний угол */
+  .logo-container {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .logo {
+    width: 100px; /* Базовый размер для планшетов */
+    height: auto;
+    max-width: 95%;
+  }
+
+  /* Бургер в ЛЕВЫЙ верхний угол */
+  .burger-nav {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .burger-menu .korzina_user {
+    display: flex !important;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .burger-menu .korzina,
+  .burger-menu .user {
+    width: 35px;
+    height: 35px;
+  }
+
+  .burger-menu .luna {
+    width: 45px;
+    height: 45px;
+  }
+
+  .burger-menu .korzina:hover,
+  .burger-menu .user:hover,
+  .burger-menu .luna:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 110px; /* Уменьшаем для небольших планшетов */
+  }
+}
+
+@media (max-width: 570px) {
+  .logo-container {
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  .burger-nav {
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  header {
+    padding: 10px 12px;
+    min-height: 50px;
+  }
+
+  .logo {
+    width: 100px; /* Уменьшаем для мобильных */
+    height: auto;
+    margin-top: 100px !important;
+    margin-left: 100px !important;
+  }
+
+  .burger-menu {
+    width: 180px;
+    left: 0;
+    right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 90px; /* Еще меньше для маленьких экранов */
   }
 
   .logo-container {
-    flex-shrink: 0;
+    right: 10px;
   }
 
+  .burger-nav {
+    left: 10px;
+  }
+
+}
+
+@media (max-width: 400px) {
   .logo {
-    width: 90px;
-    height: auto;
+    width: 80px; /* Минимальный размер для очень маленьких экранов */
+  }
+
+  .logo-container {
+    right: 8px;
+  }
+
+  .burger-nav {
+    left: 8px;
   }
 }
 
-/* Мобильная версия (≤768px) */
-@media (max-width: 768px) {
-  .burger-menu {
-    width: 180px;
-    padding: 15px;
+@media (max-width: 320px) {
+  .logo {
+    width: 70px; /* Самый маленький размер */
   }
 
-  .burger-menu a {
-    font-size: 15px;
-    padding: 6px 10px;
+  .logo-container {
+    right: 6px;
   }
-}
 
-/* Для очень маленьких мобильных */
-@media (max-width: 480px) {
+  .burger-nav {
+    left: 6px;
+  }
+
   header {
-    padding: 12px 15px;
+    padding: 8px 10px;
+    min-height: 45px;
   }
+}
 
-  .logo {
-    width: 70px;
-  }
+.korzina:hover{
+  transform: translateY(-20%) scale(1.05);
+}
+.luna:hover{
+  transform: translateY(-20%) scale(1.05);
+}
+.user:hover{
+  transform: translateY(-20%) scale(1.05);
+}
 
-  .burger-menu {
-    width: 160px;
-    padding: 12px;
-  }
-
-  .burger-menu a {
-    font-size: 14px;
-    padding: 5px 8px;
-  }
+/* Общие стили для плавных переходов */
+.korzina,
+.luna,
+.user {
+  transition: transform 0.3s ease;
 }

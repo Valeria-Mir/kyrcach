@@ -75,7 +75,7 @@
 
 /* Текст */
 .vertical_text_text{
-  font-family: Italiana;
+  font-family: Cormorant-Regular;
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
@@ -91,7 +91,7 @@
   color: #fff;
 }
 .o_nas_komanda{
-  font-family: Italiana;
+  font-family: Cormorant-Regular;
   font-weight: 400;
   font-size: 75px;
   leading-trim: NONE;
@@ -105,7 +105,7 @@
 
 }
 .textcomanda{
-  font-family: Italiana;
+  font-family: Cormorant-Regular;
   font-weight: 400;
   font-size: 32px;
   leading-trim: NONE;
@@ -119,5 +119,10 @@
 @media (max-width: 1024px){
   .vertical_text_text{
     font-size: 25px;
+  }
+}
+@media (max-width: 390px){
+  .bloc1-contact{
+    width: 1157px;
   }
 }

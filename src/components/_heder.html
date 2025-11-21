@@ -1,34 +1,41 @@
 <header>
     <div class="logo-container">
-        <img src="./assets/images/logo.webp" alt="L.R.A. логотип" class="logo logo-normal">
-        <img src="./assets/images/hoverlogo.webp" alt="L.R.A. логотип" class="logo logo-hover">
+        <img src="./assets/images/logo-hover.webp" alt="RHA Logo" class="logo logo-normal">
+        <img src="./assets/images/logo.webp" alt="RHA Logo Hover" class="logo logo-hover">
     </div>
 
-    <!-- Обычная навигация (видна на десктопе) -->
     <nav class="desktop-nav">
-        <a href="./o_nas.html">о нас</a>
-        <a href="#cooperation">сотрудничество</a>
-        <a href="./kontact.html">контакты</a>
-        <a href="#help">помощь</a>
+        <a href="index.html">Главная</a>
+        <a href="#">Товары</a>
+        <a href="o_nas.html">О нас</a>
+        <a href="kontact.html">Контакты</a>
     </nav>
 
-    <!-- Бургер-меню (виден на мобильных) -->
-    <nav class="burger-nav">
-        <input id="burger-toggle" type="checkbox">
+    <div class="korzina_user">
+        <img src="./assets/images/korzina_bardovai.webp" alt="Корзина" class="korzina">
+        <img src="./assets/images/luna.webp" alt="Переключить тему" class="luna">
+        <img src="./assets/images/user.webp" alt="Пользователь" class="user">
+    </div>
+
+    <!-- Бургер меню для мобильных -->
+    <div class="burger-nav">
+        <input type="checkbox" id="burger-toggle">
         <label for="burger-toggle">
             <span></span>
         </label>
         <ul class="burger-menu">
-            <li><a href="./o_nas.html">о нас</a></li>
-            <li><a href="#cooperation">сотрудничество</a></li>
-            <li><a href="./kontact.html">контакты</a></li>
-            <li><a href="#help">помощь</a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Товары</a></li>
+            <li><a href="o_nas.html">О нас</a></li>
+            <li><a href="kontact.html">Контакты</a></li>
+            <li class="mobile-icons">
+                <div class="korzina_user">
+                    <img src="./assets/images/korzina_bardovai.webp" alt="Корзина" class="korzina">
+                    <img src="./assets/images/luna.webp" alt="Переключить тему" class="luna">
+                    <img src="./assets/images/user.webp" alt="Пользователь" class="user">
+                </div>
+            </li>
         </ul>
-    </nav>
-
-    <div class="korzina_user">
-        <img src="./assets/images/korzina_bardovai.webp" class="korzina">
-        <img src="./assets/images/user%20(1).webp" class="user">
-        <img src="./assets/images/luna.webp" class="luna">
     </div>
 </header>
+<!--<script src="assets/js/ts.js"></script>-->

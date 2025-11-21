@@ -1,5 +1,4 @@
 /* === Акция - Базовые стили === */
-
 .achia {
   width: 1084px;
   height: 257px;
@@ -18,16 +17,16 @@
 }
 
 .achia_zg {
-  font-family: Inter;
+  font-family: Cormorant-Regular;
   font-weight: 700;
   font-size: 52px;
   line-height: 1.2;
   color: white;
-  margin-bottom: 15px;
+  margin-top: -24px;
 }
 
 .achia_p_zg {
-  font-family: Inter;
+  font-family: Cormorant-Regular;
   font-weight: 600;
   font-size: 25px;
   line-height: 1.3;
@@ -64,23 +63,29 @@
   .achia {
     width: 90%;
     height: auto;
-    padding: 30px 60px;
+    min-height: 280px;
+    padding: 40px 60px;
     margin: 0 auto;
   }
 
   .achia_zg {
     font-size: 42px;
+    margin-bottom: 15px;
   }
 
   .achia_p_zg {
     font-size: 22px;
+    margin-bottom: 30px;
   }
 
   .achia_btn {
-    width: 300px;
+    position: static;
+    transform: none;
+    width: 320px;
     height: 80px;
     font-size: 24px;
-    right: 60px;
+    margin: 0 auto;
+    display: block;
   }
 
   .hero-content_bloc6 {
@@ -92,25 +97,28 @@
 @media (max-width: 768px) {
   .achia {
     width: 95%;
-    padding: 25px 40px;
+    min-height: 320px;
+    padding: 35px 40px;
     border-radius: 20px;
+    text-align: center;
   }
 
   .achia_zg {
     font-size: 36px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+    margin-top: 0;
   }
 
   .achia_p_zg {
     font-size: 20px;
     line-height: 1.4;
+    margin-bottom: 40px;
   }
 
   .achia_btn {
-    width: 250px;
-    height: 70px;
-    font-size: 20px;
-    right: 40px;
+    width: 280px;
+    height: 75px;
+    font-size: 22px;
   }
 
   .hero-content_bloc6 {
@@ -122,31 +130,25 @@
 @media (max-width: 480px) {
   .achia {
     width: 90%;
-    padding: 30px 25px;
-    text-align: center;
-    height: auto;
-    min-height: 300px;
+    min-height: 380px;
+    padding: 40px 25px;
   }
 
   .achia_zg {
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: 32px;
+    margin-bottom: 20px;
   }
 
   .achia_p_zg {
     font-size: 18px;
     line-height: 1.4;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .achia_btn {
-    position: static;
-    transform: none;
     width: 280px;
-    height: 60px;
-    font-size: 18px;
-    margin: 20px auto 0;
-    display: block;
+    height: 70px;
+    font-size: 20px;
   }
 
   .hero-content_bloc6 {
@@ -164,25 +166,24 @@
 @media (max-width: 360px) {
   .achia {
     width: 95%;
-    padding: 25px 20px;
-    min-height: 280px;
+    min-height: 400px;
+    padding: 35px 20px;
   }
 
   .achia_zg {
-    font-size: 24px;
-    margin-bottom: 12px;
+    font-size: 28px;
+    margin-bottom: 15px;
   }
 
   .achia_p_zg {
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
 
   .achia_btn {
-    width: 240px;
-    height: 55px;
-    font-size: 16px;
-    margin-top: 15px;
+    width: 260px;
+    height: 65px;
+    font-size: 18px;
   }
 
   .hero-content_bloc6 {
@@ -210,22 +211,23 @@
 /* Оптимизация для landscape режима на мобильных */
 @media (max-width: 768px) and (orientation: landscape) {
   .achia {
-    min-height: 250px;
-    padding: 20px 30px;
+    min-height: 280px;
+    padding: 25px 30px;
   }
 
   .achia_zg {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .achia_p_zg {
     font-size: 16px;
+    margin-bottom: 30px;
   }
 
   .achia_btn {
-    width: 220px;
-    height: 50px;
-    font-size: 16px;
+    width: 240px;
+    height: 60px;
+    font-size: 18px;
   }
 }
 
@@ -234,27 +236,33 @@
   .hero-content_bloc6 {
     padding-top: 80px;
   }
+
+  .achia {
+    min-height: 350px;
+  }
 }
 
 /* Адаптация для средних экранов (между планшетом и мобильным) */
 @media (max-width: 600px) and (min-width: 481px) {
   .achia {
     width: 85%;
-    padding: 30px 35px;
+    min-height: 360px;
+    padding: 35px 30px;
   }
 
   .achia_zg {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .achia_p_zg {
     font-size: 19px;
+    margin-bottom: 45px;
   }
 
   .achia_btn {
-    width: 260px;
-    height: 65px;
-    font-size: 19px;
+    width: 270px;
+    height: 70px;
+    font-size: 20px;
   }
 }
 
@@ -289,8 +297,27 @@
 }
 
 /* Анимация при наведении для десктопа */
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .achia_btn:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Десктопная версия - кнопка справа */
+@media (min-width: 1025px) {
+  .achia_btn {
+    position: absolute;
+    right: 78px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Мобильная версия - кнопка снизу */
+@media (max-width: 1024px) {
+  .achia_btn {
+    position: static;
+    transform: none;
+    margin: 0 auto;
   }
 }

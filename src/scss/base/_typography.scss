@@ -1,0 +1,46 @@
+@font-face {
+  src: url('../fonts/Italiana-Regular.woff2') format('woff2');
+  font-family: "Italiana-Regular";
+  font-style: normal;
+}
+@font-face {
+  src: url('../fonts/BLANCO.woff2') format('woff2');
+  font-family: "BLANCO";
+  font-style: normal;
+}
+
+@font-face {
+  src: url('../fonts/RosalindaRegular.woff2') format('woff2');
+  font-family: "RosalindaRegular";
+  font-style: normal;
+}
+@font-face {
+  src: url('../fonts/Doppelganger.woff2') format('woff2');
+  font-family: "Doppelganger";
+  font-style: normal;
+}
+@font-face {
+  src: url('../fonts/Cormorant-Regular.woff2') format('woff2');
+  font-family: "Cormorant-Regular";
+  font-style: normal;
+}
+body {
+  font-family: 'Italiana', sans-serif;
+  transition: all 0.3s ease;
+}
+*{
+  font-family: 'Cormorant-Regular', sans-serif;
+  transition: all 0.3s ease;
+
+}
+a {
+  text-decoration: none;
+}
+h1{
+  font-family: 'Cormorant-Regular', sans-serif;
+  transition: all 0.3s ease;
+}
+p{
+  font-family: 'Cormorant-Regular', sans-serif;
+  transition: all 0.3s ease;
+}

@@ -1,14 +1,11 @@
-/* === Hero Section Bloc5 - Новинки - Адаптив === */
-
 .hero-content_bloc5 {
   padding: 60px 0;
 }
 
 .hero-content_bloc5 .hero-content_bloc4_zg {
-  font-family: Inter;
+  font-family: Cormorant-Regular;
   font-size: 67px;
   color: #760000;
-  text-align: center;
   padding-top: 51px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -39,7 +36,7 @@
 }
 
 .novinki-img {
-  width: 336px;
+  //width: 336px;
   height: 288.69px;
   object-fit: cover;
   border-radius: 8px;
@@ -57,10 +54,10 @@
 }
 
 .novinki_title {
-  font-family: Inter;
+  font-family: Cormorant-Regular;
   font-weight: 500;
   font-size: 39px;
-  color: #fff;
+  color: #fff; /* ИСПРАВЛЕНО: было #060606 в дублирующем блоке */
   text-decoration: none;
   display: block;
   margin-bottom: 8px;
@@ -72,7 +69,7 @@
 }
 
 .novinki_text {
-  font-family: Inter;
+  font-family: Cormorant-Regular;
   font-weight: 600;
   font-size: 36px;
   line-height: 1;
@@ -263,10 +260,16 @@
   .hero-content_bloc5 {
     padding: 80px 0;
   }
+  .wrapper {
+    display: none !important;
+  }
 }
 
 /* Адаптация для средних экранов (между планшетом и мобильным) */
 @media (max-width: 600px) and (min-width: 481px) {
+    .wrapper {
+      display: none !important;
+    }
   .hero-content_bloc5-novinki {
     gap: 20px;
   }
@@ -298,7 +301,78 @@
   }
 
   .novinki-img {
-    width: 360px;
     height: 310px;
   }
+}
+.hero-content_bloc5 {
+  padding: 60px 0;
+}
+.hero-content_bloc5 .hero-content_bloc4_zg {
+  font-size: 67px;
+  color: #760000;
+  padding-top: 51px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.hero-content_bloc5-novinki {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding-top: 48px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: transparent;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.novinki-img {
+  //width: 336px;
+  height: 288.69px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .novinki-img {
+  transform: scale(1.02);
+}
+
+.novinki_body {
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.novinki_title {
+  font-weight: 500;
+  font-size: 39px;
+  color: #060606;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.novinki_title:hover {
+  color: #760000;
+}
+
+.novinki_text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1;
+  color: #760000;
+  padding-top: 7px;
 }

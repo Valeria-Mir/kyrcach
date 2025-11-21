@@ -1,3 +1,22 @@
+.dni_nedeli_bydni {
+  font-family: Cormorant-Regular;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 100%;
+  color: #fff;
+  display: flex; /* расположение в строку */
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0; /* убираем фиксированный отступ */
+  padding: 0 10px; /* внутренние отступы для пространства */
+  flex-wrap: nowrap; /* чтобы не переносились */
+}
+
+/* Отступы между элементами */
+.dni_nedeli_bydni p {
+  margin: 0 10px; /* отступы между днями */
+}
+
 .contact-stranicka3 {
   display: flex;
   align-items: center;
@@ -7,17 +26,17 @@
 }
 
 .zg_contact {
-  font-family: Italiana;
+  font-family: Cormorant-Regular;
   font-weight: 400;
   font-size: 49px;
   color: white;
-  min-width: 300px; /* Фиксированная ширина для всех заголовков */
-  flex-shrink: 0; /* Запрещаем сжатие */
+  min-width: 300px;
+  flex-shrink: 0;
   text-align: left;
 }
 
 .telefon {
-  font-family: Inter;
+  font-family: inter;
   font-weight: 400;
   font-size: 36px;
   text-align: center;
@@ -32,10 +51,144 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0; /* Запрещаем сжатие красного блока */
+  flex-shrink: 0;
 }
+
+/* === АДАПТИВ ДЛЯ ПЛАНШЕТОВ (1024px) === */
+@media (max-width: 1024px) {
+  .contact-stranicka3 {
+    padding-left: 100px;
+    gap: 15px;
+  }
+  .dni_nedeli_bydni {
+    font-size: 36px;
+    flex-wrap: wrap; /* перенос при необходимости */
+    justify-content: flex-start;
+  }
+  .dni_nedeli_bydni p {
+    margin: 5px 10px; /* меньшие отступы */
+  }
+
+  .zg_contact {
+    font-size: 42px;
+    min-width: 250px;
+  }
+  .bloc3-kontact-bydni{
+    margin-left: -119px;
+    gap: 12px;
+  }
+  .karta-img {
+    width: 514px;
+  }
+  .telefon {
+    font-size: 32px;
+  }
+
+  .bloc_kontact {
+    width: 500px;
+    height: 70px;
+  }
+  .bloc3-kontact-karta-info{
+    margin-left: -176px;
+  }
+
+}
+
+/* === АДАПТИВ ДЛЯ ПЛАНШЕТОВ (768px) === */
+@media (max-width: 768px) {
+  .contact-stranicka3 {
+    padding-left: 50px;
+    padding-top: 40px;
+    gap: 15px;
+  }
+  .bloc3-kontact-karta {
+    flex-direction: column; /* меняем направление на колонку */
+    align-items: center; /* центрируем содержимое */
+  }
+
+  .karta-img {
+    margin-left: 0; /* убираем левый отступ */
+    margin-top: 20px; /* добавляем сверху отступ для картинки */
+    width: 100%; /* делаем картинку шириной на весь контейнер */
+    max-width: 100%; /* чтобы не растягивать больше */
+  }
+  .dni_nedeli_bydni {
+    font-size: 28px;
+    flex-direction: column; /* вертикально, если нужно */
+    align-items: flex-start;
+  }
+  .dni_nedeli_bydni p {
+    margin: 5px 0;
+  }
+
+  .zg_contact {
+    font-size: 36px;
+    min-width: 200px;
+  }
+
+  .telefon {
+    font-size: 28px;
+  }
+
+  .bloc_kontact {
+    width: 400px;
+    height: 65px;
+  }
+  .bloc1-contact{
+    width: 800px;
+  }
+}
+
+/* === АДАПТИВ ДЛЯ МОБИЛЬНЫХ (480px) === */
+@media (max-width: 480px) {
+  .contact-stranicka3 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-top: 30px;
+    gap: 15px;
+  }
+
+  .zg_contact {
+    font-size: 32px;
+    min-width: auto;
+    text-align: left;
+  }
+
+  .telefon {
+    font-size: 24px;
+  }
+
+  .bloc_kontact {
+    width: 100%;
+    max-width: 350px;
+    height: 60px;
+  }
+}
+
+/* === АДАПТИВ ДЛЯ МАЛЕНЬКИХ МОБИЛЬНЫХ (360px) === */
+@media (max-width: 360px) {
+  .contact-stranicka3 {
+    padding-left: 15px;
+    padding-top: 25px;
+  }
+
+  .zg_contact {
+    font-size: 28px;
+  }
+
+  .telefon {
+    font-size: 20px;
+  }
+
+  .bloc_kontact {
+    max-width: 300px;
+    height: 55px;
+  }
+}
+
 .dni_nedeli_bydni{
-  font-family: Italiana;
+  font-family: Cormorant-Regular;
   font-weight: 400;
   font-size: 49px;
   leading-trim: NONE;
@@ -46,6 +199,7 @@
   padding-left: 183px;
   padding-top: 60px;
 }
+
 .vrema_bydni{
   width: 404px;
   height: 89px;
@@ -62,15 +216,17 @@
   margin-left: 175px;
   margin-top: 30px;
 }
+
 .bloc3-contact{
   display: flex;
 }
+
 .bloc3-kontact-karta{
   display: flex;
+}
 
- }
 .bloc3-kontact-karta-zg{
-  font-family: Italiana;
+  font-family: Cormorant-Regular;
   font-weight: 400;
   font-style: Regular;
   font-size: 48px;
@@ -83,6 +239,13 @@
   padding-left: 175px;
   padding-top: 185px;
 }
+.bloc_kontact:hover{
+  transform: translateY(-20%) scale(1.05);
+}
+.vrema_bydni:hover{
+  transform: translateY(-20%) scale(1.05);
+}
+
 .bloc3-kontact-karta-cocheti{
   width: 410px;
   height: 200px;
@@ -95,8 +258,9 @@
   margin-left: 167px;
   margin-top: 39px;
 }
+
 .bloc3-kontact-karta-cocheti-text{
-  font-family: Italiana;
+  font-family: Cormorant-Regular;
   font-weight: 400;
   font-size: 26px;
   leading-trim: NONE;
@@ -113,6 +277,7 @@
   align-items: center;
   padding-top: 64px;
 }
+
 .karta-img{
   width: 548px;
   margin-top: 136px;

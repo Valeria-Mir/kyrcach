@@ -8,38 +8,45 @@
 <body>
 <header>
     <div class="logo-container">
-        <img src="./assets/images/logo.webp" alt="L.R.A. логотип" class="logo logo-normal">
-        <img src="./assets/images/hoverlogo.webp" alt="L.R.A. логотип" class="logo logo-hover">
+        <img src="./assets/images/logo-hover.webp" alt="RHA Logo" class="logo logo-normal">
+        <img src="./assets/images/logo.webp" alt="RHA Logo Hover" class="logo logo-hover">
+    </div>
+
+    <nav class="desktop-nav">
+        <a href="index.html">Главная</a>
+        <a href="#">Товары</a>
+        <a href="o_nas.html">О нас</a>
+        <a href="kontact.html">Контакты</a>
+    </nav>
+
+    <div class="korzina_user">
+        <img src="./assets/images/korzina_bardovai.webp" alt="Корзина" class="korzina">
+        <img src="./assets/images/luna.webp" alt="Переключить тему" class="luna">
+        <img src="./assets/images/user.webp" alt="Пользователь" class="user">
     </div>
 
     
-    <nav class="desktop-nav">
-        <a href="./o_nas.html">о нас</a>
-        <a href="#cooperation">сотрудничество</a>
-        <a href="./kontact.html">контакты</a>
-        <a href="#help">помощь</a>
-    </nav>
-
-    
-    <nav class="burger-nav">
-        <input id="burger-toggle" type="checkbox">
+    <div class="burger-nav">
+        <input type="checkbox" id="burger-toggle">
         <label for="burger-toggle">
             <span></span>
         </label>
         <ul class="burger-menu">
-            <li><a href="./o_nas.html">о нас</a></li>
-            <li><a href="#cooperation">сотрудничество</a></li>
-            <li><a href="./kontact.html">контакты</a></li>
-            <li><a href="#help">помощь</a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Товары</a></li>
+            <li><a href="o_nas.html">О нас</a></li>
+            <li><a href="kontact.html">Контакты</a></li>
+            <li class="mobile-icons">
+                <div class="korzina_user">
+                    <img src="./assets/images/korzina_bardovai.webp" alt="Корзина" class="korzina">
+                    <img src="./assets/images/luna.webp" alt="Переключить тему" class="luna">
+                    <img src="./assets/images/user.webp" alt="Пользователь" class="user">
+                </div>
+            </li>
         </ul>
-    </nav>
-
-    <div class="korzina_user">
-        <img src="./assets/images/korzina_bardovai.webp" class="korzina">
-        <img src="./assets/images/user%20(1).webp" class="user">
-        <img src="./assets/images/luna.webp" class="luna">
     </div>
 </header>
+
 <div class="bloc1-contact">
     <div class="vertical_text">
     <div class="vertical_text_title">Р.Н.A</div>
@@ -67,7 +74,7 @@
     <div class="contact-stranicka3">
     <p class="zg_contact">Email:</p>
     <div class="bloc_kontact">
-        <p class="telefon">info@lera-pro.ru</p>
+        <p class="telefon">info@Р.Н.А-pro.ru</p>
     </div>
 </div>
 </div>
@@ -90,9 +97,9 @@
         <p class="bloc3-kontact-karta-zg">Мы в соцсетях:</p>
         <div class="bloc3-kontact-karta-cocheti">
             <p class="bloc3-kontact-karta-cocheti-text">
-                Instagram:@lera_pro_fessional<br>
-                VK:vk.com/lerapro<br>
-                YouTube:L.R.A. Professional</p>
+                Instagram:@Р.Н.А_pro_fessional<br>
+                VK:vk.com/Р.Н.А-pro<br>
+                YouTube:Р.Н.A. Professional</p>
         </div>
     </div>
     <img src="./assets/images/karta.webp" class="karta-img">
@@ -131,6 +138,7 @@
 
 
 </footer>
-
+<script src="assets/js/prokrytka.js"></script>
+<script src="assets/js/ts.js"></script>
 </body>
 </html>

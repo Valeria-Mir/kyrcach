@@ -22,7 +22,7 @@
   padding-top: 39px;
 }
 .fotodtranicka4_zg{
-  font-family: Inter;
+  font-family: Cormorant-Regular;
   font-weight: 700;
   font-style: Bold;
   font-size: 66px;
@@ -38,7 +38,7 @@
   padding-top: 9px;
 }
 .tekctchena-txt{
-  font-family: Inter;
+  font-family: Cormorant-Regular;
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
@@ -73,7 +73,7 @@
   margin-left: -39px;
 }
 .opicanie-kart-zg{
-  font-family: Inter;
+  font-family: Cormorant-Regular;
   font-weight: 700;
   //font-style: Bold;
   font-size: 40px;
@@ -92,7 +92,7 @@
   opacity: 1; /* потом переопределяется на 6px */
 }
 .camainfo-kart{
-  font-family: Inter;
+  font-family: Cormorant-Regular;
   font-weight: 700;
   font-style: Bold;
   font-size: 28px;
@@ -103,7 +103,7 @@
   padding-top: 44px;
 }
 .chitat_dalche{
-  font-family: Inter;
+  font-family: Cormorant-Regular;
   font-weight: 700;
   font-style: Bold;
   font-size: 28px;
@@ -117,5 +117,11 @@
 }
 .btn-img{
   margin-left: -113px;
-  margin-top: -98px;
+  margin-top: -36px;
+
 }
+.malkart:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+

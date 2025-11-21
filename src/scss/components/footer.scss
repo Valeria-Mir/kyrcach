@@ -1,15 +1,14 @@
 /* === Футер - Базовые стили === */
-
 footer {
   width: 100%;
-  height: 380px; /* Уменьшил высоту */
+  height: 380px;
   background: #060606;
   color: white;
   border-top: 2px solid #760000;
-  margin-top: 80px; /* Уменьшил отступ сверху */
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Выравнивание по центру по вертикали */
+  justify-content: center;
   align-items: center;
 }
 
@@ -17,21 +16,21 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 80px; /* Уменьшил расстояние между колонками */
-  font-size: 22px; /* Немного уменьшил шрифт */
+  gap: 80px;
+  font-size: 22px;
   color: #fff;
-  margin-top: -20px; /* Поднимаем блок выше */
+  margin-top: -20px;
 }
 
 .groop_footer a {
   text-decoration: none;
   color: inherit;
   transition: color 0.3s ease;
-  line-height: 1.4; /* Уменьшил межстрочное расстояние */
+  line-height: 1.4;
 }
 
 .groop_footer a:hover {
-  color: #760000;
+  color: #760000 !important;
 }
 
 .groop_footer p {
@@ -43,11 +42,12 @@ footer {
   text-align: center;
   font-size: 36px;
   color: #ccc;
-  margin-bottom: 30px; /* Отступ снизу перед колонками */
+  margin-bottom: 30px;
   padding: 0 20px;
 }
 
-/* === АДАПТИВ ДЛЯ ПЛАНШЕТОВ (1024px - 769px) === */
+
+/* Остальной ваш адаптив остается без изменений */
 @media (max-width: 1024px) {
   footer {
     height: 350px;
@@ -64,8 +64,6 @@ footer {
     margin-bottom: 25px;
   }
 }
-
-/* === АДАПТИВ ДЛЯ ПЛАНШЕТОВ (768px) === */
 @media (max-width: 768px) {
   footer {
     height: auto;
